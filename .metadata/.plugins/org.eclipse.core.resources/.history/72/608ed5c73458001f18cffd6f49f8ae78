@@ -21,8 +21,6 @@ public class Negativos {
 			positivos[i] = sc.nextInt();
 		}
 		
-		System.out.println("Numeros Negativos:");
-		
 		for (int i = 0; i < N; i++) {
 			if (positivos[i] < 0) {
 				System.out.println(positivos[i]);	
