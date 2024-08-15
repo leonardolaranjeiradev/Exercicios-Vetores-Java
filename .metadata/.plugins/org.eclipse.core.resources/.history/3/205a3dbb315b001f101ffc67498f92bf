@@ -1,0 +1,9 @@
+package exercicio3;
+
+public class Alturas {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
