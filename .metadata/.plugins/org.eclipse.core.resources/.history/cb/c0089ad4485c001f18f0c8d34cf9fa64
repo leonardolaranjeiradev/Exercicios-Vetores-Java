@@ -37,7 +37,12 @@ public class Media_Pares {
 			System.out.printf("MEDIA DOS PARES = %.1f%n", media);
 		} else {
 			System.out.println("NENHUM NUMERO PAR");
-		}	
+		}
+	
+		
+		
+		
+		
 		
 		sc.close();
 

@@ -18,7 +18,7 @@ public class Media_Pares {
 		
 		int[] vetor = new int[n];
 		int pares = 0;
-		double media,soma = 0.0;
+		double media = 0.0;
 		
 		for(int i=0; i<n; i++) {
 			System.out.print("Digite um numero:");
@@ -27,17 +27,17 @@ public class Media_Pares {
 		
 		for(int i=0; i<n; i++) {
 			if (vetor[i] % 2 == 0) {				
-				soma += vetor[i];
-				pares++;							
+				pares += vetor[i];
+			} else {
+				System.out.println("NENHUM NUMERO PAR");				
 			}
 			
-		}
-		if (pares > 0) {
-			media = soma / pares;	
-			System.out.printf("MEDIA DOS PARES = %.1f%n", media);
-		} else {
-			System.out.println("NENHUM NUMERO PAR");
-		}	
+		}		
+		media = soma / pares.length;
+		System.out.printf("MEDIA DOS PARES = %.1f%n", media);
+		
+		
+		
 		
 		sc.close();
 

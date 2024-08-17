@@ -9,37 +9,12 @@ public class Media_Pares {
 		// Fazer um programa para ler um vetor de N números inteiros. Em seguida, mostrar na tela a média
 		// aritmética somente dos números pares lidos, com uma casa decimal. Se nenhum número par for
 		// digitado, mostrar a mensagem "NENHUM NUMERO PAR"
-				
+		
+		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("Quantos elementos vai ter o vetor?");
-		int n = sc.nextInt();
-		
-		int[] vetor = new int[n];
-		int pares = 0;
-		double media,soma = 0.0;
-		
-		for(int i=0; i<n; i++) {
-			System.out.print("Digite um numero:");
-			vetor[i] = sc.nextInt();
-		}
-		
-		for(int i=0; i<n; i++) {
-			if (vetor[i] % 2 == 0) {				
-				soma += vetor[i];
-				pares++;							
-			}
-			
-		}
-		if (pares > 0) {
-			media = soma / pares;	
-			System.out.printf("MEDIA DOS PARES = %.1f%n", media);
-		} else {
-			System.out.println("NENHUM NUMERO PAR");
-		}	
-		
-		sc.close();
 
 	}
 
