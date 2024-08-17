@@ -1,0 +1,10 @@
+package exercicio5;
+
+public class Soma_Vetores {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
