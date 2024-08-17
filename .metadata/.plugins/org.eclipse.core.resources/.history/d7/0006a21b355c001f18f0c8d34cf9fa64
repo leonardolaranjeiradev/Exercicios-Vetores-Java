@@ -16,6 +16,7 @@ public class Maior_Posicao {
 		
 		System.out.print("Quantos numeros voce vai digitar?");
 		int n = sc.nextInt();
+		double maior = 0;
 		int posicao = 0;
 		
 		double[] vetor = new double[n];
@@ -25,16 +26,15 @@ public class Maior_Posicao {
 			vetor[i] = sc.nextDouble();
 		}
 		
-		double maior = vetor[0];
-		
-		for (int i=0; i<n; i++) {			
+		for (int i=0; i<n; i++) {
+			maior = vetor[i];
 			if (vetor[i] > maior) {
 				maior = vetor[i];	
 				posicao = i;
 			}
 		}
 		
-		System.out.printf("MAIOR VALOR = %.1f%n", maior);
+		System.out.printf("MAIOR VALOR = %.1f", maior);
 		System.out.println("POSICAO DO MAIOR VALOR = " + posicao);	
 		
 		
