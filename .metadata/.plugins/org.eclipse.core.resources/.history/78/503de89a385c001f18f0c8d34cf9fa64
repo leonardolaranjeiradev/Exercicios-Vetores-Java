@@ -29,8 +29,6 @@ public class Abaixo_da_media {
 			soma += vetor[i];
 		}
 		
-		System.out.println("");
-		
 		media = soma / vetor.length;
 		System.out.printf("MEDIA DO VETOR = %.3f%n", media);
 		System.out.println("ELEMENTOS ABAIXO DA MEDIA:");
