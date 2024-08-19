@@ -39,13 +39,8 @@ public class Pensionato {
 			vetor[numeroQuarto] = aluguel;			
 		}
 		
-		System.out.println();
-		System.out.println("Quartos alugados:");
-		
-		for(int i = 0; i < 10; i++) {
-			if (vetor[i] != null) {
-				System.out.println(i + ": " + vetor[i]);
-			}
+		for(int i = 0; i < vetor.length; i++) {
+			
 		}
 		
 	

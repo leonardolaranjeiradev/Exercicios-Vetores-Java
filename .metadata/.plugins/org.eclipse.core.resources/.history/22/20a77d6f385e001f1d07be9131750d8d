@@ -21,34 +21,13 @@ public class Pensionato {
 		
 		Aluguel[] vetor = new Aluguel[10];
 		
-		System.out.print("Quantos quartos serão alugados?");
-		int N = sc.nextInt();
+		//System.out.print("Quantos quartos serão alugados?");
+		//int N = sc.nextInt();
 		
-		for(int i = 0; i < N; i++) {
-			System.out.println();
-			System.out.println("Alguel #" + (i+1) + ":");
-			System.out.print("Nome:");
-			sc.nextLine();
-			String nome = sc.nextLine();
-			System.out.print("Email:");
-			String email = sc.next();
-			System.out.print("Quarto:");
-			int numeroQuarto = sc.nextInt();
-			
-			Aluguel aluguel = new Aluguel(nome, email);
-			vetor[numeroQuarto] = aluguel;			
-		}
+		Aluguel aluguel = new Aluguel("Maria", "maria@gmail.com");
+		System.out.println(aluguel);
 		
-		System.out.println();
-		System.out.println("Quartos alugados:");
 		
-		for(int i = 0; i < 10; i++) {
-			if (vetor[i] != null) {
-				System.out.println(i + ": " + vetor[i]);
-			}
-		}
-		
-	
 		
 		
 		

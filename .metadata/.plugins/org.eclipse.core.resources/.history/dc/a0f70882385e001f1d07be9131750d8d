@@ -25,7 +25,6 @@ public class Pensionato {
 		int N = sc.nextInt();
 		
 		for(int i = 0; i < N; i++) {
-			System.out.println();
 			System.out.println("Alguel #" + (i+1) + ":");
 			System.out.print("Nome:");
 			sc.nextLine();
@@ -33,21 +32,11 @@ public class Pensionato {
 			System.out.print("Email:");
 			String email = sc.next();
 			System.out.print("Quarto:");
-			int numeroQuarto = sc.nextInt();
+			int quarto = sc.nextInt();
 			
 			Aluguel aluguel = new Aluguel(nome, email);
-			vetor[numeroQuarto] = aluguel;			
+			
 		}
-		
-		System.out.println();
-		System.out.println("Quartos alugados:");
-		
-		for(int i = 0; i < 10; i++) {
-			if (vetor[i] != null) {
-				System.out.println(i + ": " + vetor[i]);
-			}
-		}
-		
 	
 		
 		
